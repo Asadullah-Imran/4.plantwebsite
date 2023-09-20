@@ -1,1 +1,87 @@
-/*# sourceMappingURL=Sidebar.css.map */
+:root {
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --PaleGreen: hsl(96, 75%, 89%);
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --TextColor: hsl(240, 1%, 48%);
+  --BgColor: hsl(220, 10%, 94%);
+  --GrayText: hsl(190, 190, 190);
+  --InputColor: hsl(330, 12%, 97%);
+  /* Font and typography */
+  --BiggestFontSize: 2.4rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --NormallFontSize: 0.938rem;
+  --SmallFontSize: 0.813rem;
+  --SmallestFontSize: 0.75rem;
+}
+
+.sideBar {
+  background: var(--WhiteColor);
+  box-shadow: 1px 0px 4px var(--GrayText);
+  width: 18%;
+  height: 100%;
+  gap: 3rem;
+  overflow: auto;
+}
+.sideBar .logoDiv {
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.sideBar .logoDiv img {
+  max-width: 20px;
+  margin-right: 0.5rem;
+  background: var(--InputColor);
+  border-radius: 2px;
+  padding: 0.2rem;
+}
+.sideBar .logoDiv h2 {
+  font-size: var(--h2FontSize);
+  color: var(--PrimaryColor);
+}
+.sideBar .menuDiv .divTitle,
+.sideBar .settingsDiv .divTitle {
+  font-size: var(--h3FontSize);
+  color: var(--BlackColor);
+  padding: 0 1.5rem 1.5rem;
+}
+.sideBar .menuDiv .menuLists .listItem,
+.sideBar .settingsDiv .menuLists .listItem {
+  padding: 0.2rem 1.5rem;
+  width: 100%;
+  position: relative;
+}
+.sideBar .menuDiv .menuLists .listItem::before,
+.sideBar .settingsDiv .menuLists .listItem::before {
+  position: absolute;
+  content: "";
+  height: 0%;
+  left: 0;
+  width: 5px;
+  bottom: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: var(--PrimaryColor);
+}
+.sideBar .menuDiv .menuLists .listItem .menuLink,
+.sideBar .settingsDiv .menuLists .listItem .menuLink {
+  color: var(--GrayText);
+  font-weight: 500;
+  transition: 0s;
+}
+.sideBar .menuDiv .menuLists .listItem .menuLink .icon,
+.sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
+  margin-right: 0.5rem;
+}
+.sideBar .menuDiv .menuLists .listItem:hover,
+.sideBar .settingsDiv .menuLists .listItem:hover {
+  color: var(--PrimaryColor);
+  transition: 0s;
+}
+.sideBar .menuDiv .menuLists .listItem:hover::before,
+.sideBar .settingsDiv .menuLists .listItem:hover::before {
+  height: 100%;
+  transition: 0.3s ease;
+}/*# sourceMappingURL=Sidebar.css.map */

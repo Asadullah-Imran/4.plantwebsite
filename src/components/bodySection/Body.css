@@ -1,1 +1,11 @@
-/*# sourceMappingURL=Body.css.map */
+.mainContent {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.mainContent .bottom {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}/*# sourceMappingURL=Body.css.map */

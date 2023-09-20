@@ -52,6 +52,7 @@ img {
 .grid {
   display: grid;
   align-items: center;
+  gap: 1.5rem;
 }
 .btn {
   border: none;
