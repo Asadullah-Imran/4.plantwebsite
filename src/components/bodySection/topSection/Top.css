@@ -1,1 +1,161 @@
-/*# sourceMappingURL=Top.css.map */
+:root {
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --PaleGreen: hsl(96, 75%, 89%);
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --TextColor: hsl(240, 1%, 48%);
+  --BgColor: hsl(220, 10%, 94%);
+  --GrayText: hsl(190, 190, 190);
+  --InputColor: hsl(330, 12%, 97%);
+  /* Font and typography */
+  --BiggestFontSize: 2.4rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --NormallFontSize: 0.938rem;
+  --SmallFontSize: 0.813rem;
+  --SmallestFontSize: 0.75rem;
+}
+
+.topSection .headerSection {
+  justify-content: space-between;
+}
+.topSection .headerSection .title h1 {
+  font-size: var(--h1FontSize);
+  color: var(--BlackColor);
+  font-weight: 700;
+}
+.topSection .headerSection .title p {
+  font-size: var(--NormallFontSize);
+  color: var(--TextColor);
+  font-weight: 500;
+}
+.topSection .headerSection .searchBar {
+  padding: 1rem 2rem;
+  background: var(--WhiteColor);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--InputColor);
+}
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.topSection .headerSection .searchBar .icon {
+  color: var(--TextColor);
+}
+.topSection .headerSection .searchBar .icon:hover {
+  color: var(--PrimaryColor);
+  transition: 0s;
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: var(--BiggestFontSize);
+  background: var(--WhiteColor);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px var(--InputColor);
+  color: var(--TextColor);
+}
+.topSection .headerSection .adminDiv .adminImage {
+  border: 3px solid var(--WhiteColor);
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--InputColor);
+}
+.topSection .headerSection .adminDiv .adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.topSection .cardSection {
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.topSection .cardSection .rightCard {
+  position: relative;
+  flex-basis: 70%;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.topSection .cardSection .rightCard .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.topSection .cardSection .rightCard .videoDiv video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.topSection .cardSection .rightCard h1,
+.topSection .cardSection .rightCard p,
+.topSection .cardSection .rightCard .btn {
+  z-index: 100;
+}
+.topSection .cardSection .rightCard h1 {
+  font-size: var(--h1FontSize);
+  color: var(--WhiteColor);
+  font-weight: 800;
+}
+.topSection .cardSection .rightCard p {
+  padding: 1rem;
+  color: var(--PaleGreen);
+  font-weight: 500;
+}
+.topSection .cardSection .rightCard .buttons {
+  gap: 1rem;
+}
+.topSection .cardSection .rightCard .buttons .btn {
+  box-shadow: none;
+  padding: 0.8rem 1.5rem;
+  color: var(--PrimaryColor);
+  border-radius: 2px solid transparent;
+}
+.topSection .cardSection .rightCard .buttons .transparent {
+  background: none;
+  border: 2px solid var(--PaleGreen);
+  color: var(--PaleGreen);
+}
+.topSection .cardSection .rightCard .buttons .transparent:hover {
+  background: var(--PaleGreen);
+  color: var(--PrimaryColor);
+}
+.topSection .cardSection .leftCard {
+  flex-basis: 50%;
+  background: pink;
+}
+.topSection .cardSection .leftCard .main {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 1rem;
+  background: red;
+  justify-content: space-between;
+}
+.topSection .cardSection .leftCard .main::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 75%;
+  background: var(--PaleGreen);
+  left: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}/*# sourceMappingURL=Top.css.map */
