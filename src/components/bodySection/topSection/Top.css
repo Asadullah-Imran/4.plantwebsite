@@ -320,4 +320,13 @@
   .cardSection .leftCard .main .imgDiv {
     display: none;
   }
+}
+@media screen and (max-width: 390px) {
+  .topSection .cardSection .rightCard {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .topSection .cardSection .rightCard h1 {
+    font-size: var(--h2FontSize);
+  }
 }/*# sourceMappingURL=Top.css.map */
