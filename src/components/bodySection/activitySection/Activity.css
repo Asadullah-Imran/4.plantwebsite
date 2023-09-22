@@ -72,4 +72,26 @@
   color: var(--TextColor);
   font-weight: 500;
   font-size: var(--SmallestFontSize);
+}
+
+@media screen and (max-width: 990px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 918px) {
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=Activity.css.map */
