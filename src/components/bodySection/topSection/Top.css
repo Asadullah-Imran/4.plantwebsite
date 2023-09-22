@@ -271,8 +271,12 @@
     align-self: flex-start;
     height: 10px !important;
   }
-  .cardSection .leftCard .sideBarCard {
-    display: block !important;
+  .cardSection .leftCard .main {
+    margin: auto;
+  }
+  .cardSection .leftCard .main .sideBarCard {
+    display: block;
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 918px) {

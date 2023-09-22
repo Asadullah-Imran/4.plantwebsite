@@ -2,9 +2,13 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { BsArrowRightShort } from "react-icons/bs";
 import "./Listing.css";
 import user1 from "/user1.jpg";
+import user6 from "/user10.jpg";
+import user7 from "/user11.jpg";
+import user8 from "/user12.jpg";
 import user2 from "/user2.jpg";
 import user3 from "/user3.jpg";
 import user4 from "/user4.jpg";
+import user5 from "/user9.jpg";
 
 const Listing = () => {
   return (
@@ -20,7 +24,7 @@ const Listing = () => {
         <div className="singleItem">
           <AiFillHeart className="icon" />
           <img src="./pic2.png" alt="image name" />
-          <h3>Snake Plant</h3>
+          <h3>Anthurium</h3>
         </div>
 
         <div className="singleItem">
@@ -79,10 +83,10 @@ const Listing = () => {
 
           <div className="card flex">
             <div className="users">
-              <img src={user1} alt="user name" />
-              <img src={user2} alt="user name" />
-              <img src={user3} alt="user name" />
-              <img src={user4} alt="user name" />
+              <img src={user5} alt="user name" />
+              <img src={user6} alt="user name" />
+              <img src={user7} alt="user name" />
+              <img src={user8} alt="user name" />
             </div>
             <div className="cardText">
               <span>

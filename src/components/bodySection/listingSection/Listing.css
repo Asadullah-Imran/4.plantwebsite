@@ -53,6 +53,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: auto;
   padding: 1rem;
   border-radius: 10px;
   background: var(--itemCardColor);
@@ -128,11 +129,15 @@
 @media screen and (max-width: 990px) {
   .listingSection .sellers .card {
     flex-direction: column;
+    width: 280px;
   }
 }
 @media screen and (max-width: 918px) {
   .listingSection .singleItem {
     width: 200px !important;
+  }
+  .listingSection .sellers .card {
+    width: initial;
   }
 }
 @media screen and (max-width: 490px) {

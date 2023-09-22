@@ -75,8 +75,8 @@
 .sideBar .settingsDiv .menuLists .listItem .menuLink .icon {
   margin-right: 0.5rem;
 }
-.sideBar .menuDiv .menuLists .listItem:hover,
-.sideBar .settingsDiv .menuLists .listItem:hover {
+.sideBar .menuDiv .menuLists .listItem .menuLink:hover,
+.sideBar .settingsDiv .menuLists .listItem .menuLink:hover {
   color: var(--PrimaryColor);
   transition: 0;
 }

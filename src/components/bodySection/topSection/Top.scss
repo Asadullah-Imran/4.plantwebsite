@@ -284,9 +284,12 @@
     .leftCard {
       align-self: flex-start;
       height: 10px !important;
-
-      .sideBarCard {
-        display: block !important;
+      .main {
+        margin: auto;
+        .sideBarCard {
+          display: block;
+          max-width: 300px;
+        }
       }
     }
   }

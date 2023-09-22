@@ -74,12 +74,12 @@
           .icon {
             margin-right: 0.5rem;
           }
+          &:hover {
+            color: var(--PrimaryColor);
+            transition: 0;
+          }
         }
 
-        &:hover {
-          color: var(--PrimaryColor);
-          transition: 0;
-        }
         &:hover::before {
           height: 100%;
           transition: 0.3s ease;

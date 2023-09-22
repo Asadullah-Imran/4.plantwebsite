@@ -80,6 +80,9 @@
     align-items: flex-start;
     gap: 1rem;
   }
+  .secContainer {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 918px) {
   .heading {
@@ -88,10 +91,13 @@
     gap: 1rem;
   }
 }
-@media screen and (max-width: 990px) {
-  .heading {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+@media screen and (max-width: 800px) {
+  .secContainer {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .secContainer {
+    width: initial;
   }
 }/*# sourceMappingURL=Activity.css.map */
