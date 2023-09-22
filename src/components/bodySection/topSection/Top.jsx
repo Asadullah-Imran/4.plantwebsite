@@ -1,8 +1,9 @@
 import { BiSearchAlt } from "react-icons/bi";
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRightShort, BsQuestionCircle } from "react-icons/bs";
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import { TbMessageCircle } from "react-icons/tb";
 import img from "/adminImage.jpg";
+
 import video from "/video.mp4";
 
 import "./Top.css";
@@ -12,7 +13,7 @@ const Top = () => {
       <div className="headerSection flex">
         <div className="title">
           <h1>Welcome to Panife</h1>
-          <p>Hello "Your name", Welcome back! </p>
+          <p>Hello &quot;Your name&quot;, Welcome back! </p>
         </div>
         <div className="searchBar flex">
           <input type="text" placeholder="Search Dashboard" />
@@ -61,10 +62,10 @@ const Top = () => {
             </div>
 
             <div className="imgDiv">
-              <img src={img} alt="image name" />
+              <img src="./pic1.png" alt="image name" />
             </div>
             {/* we willl use this later */}
-            {/* <div className="sideBarCard">
+            <div className="sideBarCard">
               <BsQuestionCircle className="icon" />
               <div className="cardContent">
                 <div className="circle1"></div>
@@ -76,7 +77,7 @@ const Top = () => {
                 </p>
                 <button className="btn">Go to help center</button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

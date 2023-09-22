@@ -6,7 +6,7 @@
   --BlackColor: hsl(0, 0%, 18%);
   --TextColor: hsl(240, 1%, 48%);
   --BgColor: hsl(220, 10%, 94%);
-  --GrayText: hsl(190, 190, 190);
+  --GrayText: rgb(190, 190, 190);
   --InputColor: hsl(330, 12%, 97%);
 
   /* Font and typography */
@@ -78,7 +78,7 @@
 
         &:hover {
           color: var(--PrimaryColor);
-          transition: 0s;
+          transition: 0;
         }
         &:hover::before {
           height: 100%;

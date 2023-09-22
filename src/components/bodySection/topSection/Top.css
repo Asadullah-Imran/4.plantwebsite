@@ -139,14 +139,12 @@
 }
 .topSection .cardSection .leftCard {
   flex-basis: 50%;
-  background: pink;
 }
 .topSection .cardSection .leftCard .main {
   position: relative;
   padding: 1rem;
   height: 200px;
   border-radius: 1rem;
-  background: red;
   justify-content: space-between;
 }
 .topSection .cardSection .leftCard .main::before {
@@ -158,4 +156,168 @@
   left: 0;
   bottom: 0;
   border-radius: 1rem;
+}
+.topSection .cardSection .leftCard .main .textDiv {
+  z-index: 100;
+}
+.topSection .cardSection .leftCard .main .textDiv h1 {
+  font-size: var(--h1FontSize);
+  padding-bottom: 1rem;
+  color: var(--BlackColor);
+}
+.topSection .cardSection .leftCard .main .textDiv .flex {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--BlackColor);
+}
+.topSection .cardSection .leftCard .main .textDiv .flex small {
+  font-size: var(--NormallFontSize);
+  display: block;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.topSection .cardSection .leftCard .main .textDiv .link {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.topSection .cardSection .leftCard .main .textDiv .link:hover {
+  color: var(--PrimaryColor);
+}
+.topSection .cardSection .leftCard .main .textDiv .link:hover .icon {
+  transform: translate(10px);
+  transition: 0.3s ease;
+}
+.topSection .cardSection .leftCard .main .imgDiv {
+  transform: translateY(-20px);
+}
+.topSection .cardSection .leftCard .main .imgDiv img {
+  height: 180px;
+}
+.topSection .cardSection .leftCard .sideBarCard {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+.topSection .cardSection .leftCard .sideBarCard .icon {
+  position: absolute;
+  background: var(--HoverColor);
+  border: 10px solid var(--WhiteColor);
+  font-size: 3rem;
+  border-radius: 50%;
+  top: -8px;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 100;
+}
+.topSection .cardSection .leftCard .sideBarCard .cardContent {
+  position: relative;
+  padding: 1rem;
+  background: var(--HoverColor);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.topSection .cardSection .leftCard .sideBarCard h3 {
+  font-size: var(--h3FontSize);
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-weight: 800;
+  color: var(--BlackColor);
+}
+.topSection .cardSection .leftCard .sideBarCard p {
+  font-size: var(--NormallFontSize);
+  color: var(--TextColor);
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.topSection .cardSection .leftCard .sideBarCard .btn {
+  position: relative;
+  color: var(--TextColor);
+  z-index: 1000;
+}
+.topSection .cardSection .leftCard .sideBarCard .circle1,
+.topSection .cardSection .leftCard .sideBarCard .circle2 {
+  position: absolute;
+  background: var(--PaleGreen);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.topSection .cardSection .leftCard .sideBarCard .circle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  left: -50px;
+}
+.topSection .cardSection .leftCard .sideBarCard .circle2 {
+  height: 150px;
+  width: 150px;
+  bottom: -80px;
+  right: -70px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .cardSection {
+    flex-direction: column;
+  }
+  .cardSection .rightCard,
+  .cardSection .leftCard {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .cardSection .leftCard {
+    align-self: flex-start;
+    height: 10px !important;
+  }
+  .cardSection .leftCard .sideBarCard {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 918px) {
+  .headerSection .searchBar {
+    display: none;
+  }
+}
+@media screen and (max-width: 725px) {
+  .cardSection .leftCard .main {
+    width: 100%;
+  }
+  .cardSection .leftCard .sideBarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .headerSection .adminDiv {
+    display: none !important;
+  }
+  .headerSection .title {
+    text-align: center;
+    margin: auto;
+  }
+  .cardSection .rightCard {
+    text-align: center;
+  }
+  .cardSection .rightCard .buttons {
+    margin: auto;
+    flex-direction: column;
+  }
+  .cardSection .rightCard .buttons .btn {
+    width: 100%;
+  }
+  .cardSection .leftCard .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardSection .leftCard .main .textDiv {
+    margin: auto;
+  }
+  .cardSection .leftCard .main::before {
+    width: 100% !important;
+  }
+  .cardSection .leftCard .main .imgDiv {
+    display: none;
+  }
 }/*# sourceMappingURL=Top.css.map */

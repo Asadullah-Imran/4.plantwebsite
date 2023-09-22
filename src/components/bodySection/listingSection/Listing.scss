@@ -1,0 +1,132 @@
+:root {
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --PaleGreen: hsl(96, 75%, 89%);
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --TextColor: hsl(240, 1%, 48%);
+  --BgColor: hsl(220, 10%, 94%);
+  --GrayText: rgb(190, 190, 190);
+  --InputColor: hsl(330, 12%, 97%);
+  //   new addition
+  --itemCardColor: hsl(120, 5%, 88%);
+  --itemCardHover: hsl(120, 27%, 87%);
+
+  /* Font and typography */
+  --BiggestFontSize: 2.4rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --NormallFontSize: 0.938rem;
+  --SmallFontSize: 0.813rem;
+  --SmallestFontSize: 0.75rem;
+}
+
+.listingSection {
+  flex-basis: 70%;
+  .heading {
+    width: 100%;
+    justify-content: space-between;
+
+    h1 {
+      font-size: var(--h2FontSize);
+      color: var(--BlackColor);
+      font-weight: 700;
+    }
+
+    .btn {
+      border: 1px solid transparent;
+      font-weight: 500;
+    }
+    .btn:hover {
+      border: 1px solid var(--PrimaryColor);
+    }
+  }
+  .secContainer {
+    width: 100%;
+    margin: 1rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .singleItem {
+      position: relative;
+      width: 150px;
+      height: 170px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 10px;
+      background: var(--itemCardColor);
+
+      &:hover {
+        background: var(--itemCardHover);
+        box-shadow: 0 2px 2px var(--InputColor);
+      }
+
+      img {
+        max-width: 100px;
+      }
+      .icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: var(--PrimaryColor);
+      }
+      //   h3 {
+      //   }
+    }
+  }
+
+  .sellers {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    .topSellers,
+    .featuredSellers {
+      .heading {
+        padding: 1rem 0;
+        .btn {
+          padding: 0.5rem 1rem;
+        }
+      }
+      .card {
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        background: var(--WhiteColor);
+        gap: 1rem;
+        box-shadow: 0 2px 4 px var(--InputColor);
+
+        .users {
+          padding-right: 1rem;
+          border-right: 2px solid var(--GrayText);
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--InputColor);
+            transition: 0.5s ease;
+            &:hover {
+              transform: translateY(-10px);
+            }
+          }
+        }
+        .cardText {
+          span {
+            color: var(--BlackColor);
+            font-weight: 500;
+            small {
+              font-weight: 400;
+              .date {
+                margin-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
